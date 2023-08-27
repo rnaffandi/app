@@ -34,3 +34,10 @@ Using AWS SSM to remote server
 
 # How to rollback apps deployment
 1. Docker run [myregistry/app:rollbackversion]
+
+# Additional steps
+using Terraform to manage IaC 
+1. find directory terraform code(.terraform)
+2. initiate terraforn code using command `terraform init`
+3. view changes using command `terraform plan`
+4. apply changes using command `terraform apply`
