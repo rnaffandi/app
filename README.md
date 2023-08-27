@@ -198,7 +198,7 @@ That's it! You've successfully installed Docker on your Ubuntu system.
 Notes:
 Using AWS SSH to remote server
 
-# How to migrate the code to AWS console
+# How to migrate code to AWS console
 ```bash
 use scp -i instance-privatekey.pem Dockerfile ubuntu@xxx
 ```
