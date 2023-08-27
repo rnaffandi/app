@@ -200,7 +200,7 @@ Using AWS SSH to remote server
 
 # How to migrate the code to AWS console
 ```bash
-use scp -i instance-privatekey.pem Dockerfile ubuntu@xxx
+use scp -i instance-privatekey.pem Dockerfile test.js ubuntu@xxx:/app
 ```
 1. scp: This command is used to securely copy files and directories between hosts over an SSH connection. It stands for "secure copy."
 
@@ -240,7 +240,7 @@ These commands are commonly used in the Docker workflow to build and run Docker 
 
 # How to deploy Nginx as reverse proxy
 1. Create Nginx config for reverse proxy
-2. docker run -d --name nginx-proxy -p 80:80 -v $(pwd)/nginx.conf:/home/ubuntu/app/Nginx/nginx.conf:ro nginx
+2. docker run -d --name nginx-proxy -p 80:80 -v $(pwd)/nginx.conf:/home/ubuntu/etc/nginx/nginx.conf:ro nginx
 
 # How to rollback apps deployment
-1. Docker run [myregistry/app:rollbackversion]
+1. Docker run [myregistry/app:beforeversion]
